@@ -31,9 +31,18 @@ function createData(newData) {
     }, 2000);
   });
 }
-createData({
-  name: "sushar",
-  profression: "frontend enginner",
-})
-  .then(getDats)
-  .catch((err) => alert(err));
+// createData({
+//   name: "sushar",
+//   profression: "frontend enginner",
+// })
+//   .then(getDats)
+//   .catch((err) => alert(err));
+
+async function start() {
+  await createData({
+    name: "sushar",
+    profression: "frontend enginner",
+  });
+  getDats();
+}
+start();
