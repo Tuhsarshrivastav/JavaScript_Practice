@@ -23,3 +23,10 @@ var students = {
 };
 const { age, ...rest } = students;
 console.log(rest);
+
+// Rest example in object
+var newStudent = {
+  ...students,
+  age: "22",
+};
+console.log(newStudent);
