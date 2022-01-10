@@ -14,3 +14,12 @@ function getNames(name1, name2) {
   console.log(name1, name2);
 }
 getNames(...names); // spread oprator
+
+// Rest example in object
+var students = {
+  name: "tushar",
+  age: "23",
+  hobbies: "gameing coding",
+};
+const { age, ...rest } = students;
+console.log(rest);
