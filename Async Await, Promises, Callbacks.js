@@ -18,16 +18,22 @@ function getDats() {
   }, 1000);
 }
 
-function createData(newData, callback) {
-  setTimeout(() => {
-    datas.push(newData);
-    callback();
-  }, 2000);
+function createData(newData) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      datas.push(newData);
+      let error = false;
+      if (!error) {
+        resolve();
+      } else {
+        reject("kuch shi nhi h ");
+      }
+    }, 2000);
+  });
 }
-createData(
-  {
-    name: "sushar",
-    profression: "frontend enginner",
-  },
-  getDats
-);
+createData({
+  name: "sushar",
+  profression: "frontend enginner",
+})
+  .then(getDats)
+  .catch((err) => alert(err));
