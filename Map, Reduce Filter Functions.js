@@ -9,6 +9,8 @@ const companies = [
 const ages = [33, 22, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 
 // foreach
-companies.forEach((companie, index) => {
-  console.log(companie, index);
-});
+// companies.forEach((companie) => console.log(companie));
+
+// filter
+// const finalage = ages.filter(age => age > 20);
+// console.log(finalage);
