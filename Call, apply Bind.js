@@ -1,5 +1,4 @@
 // Call, apply & Bind
-
 let userDetails = {
   name: "Tushar shrivastav",
   age: 23,
@@ -16,4 +15,4 @@ let userDetails1 = {
   age: 23,
   Designation: "backend Engineer",
 };
-printDetails.call(userDetails1);
+printDetails.call(userDetails1, ["jabalpur", "india"]);
