@@ -15,4 +15,7 @@ let userDetails1 = {
   age: 23,
   Designation: "backend Engineer",
 };
-printDetails.call(userDetails1, ["jabalpur", "india"]);
+printDetails.call(userDetails1);
+
+let newFuc = printDetails.bind(userDetails);
+console.log(newFuc());
