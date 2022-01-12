@@ -23,5 +23,9 @@ const ages = [33, 22, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 // companies.map((compney) => console.log(compney.name));
 
 // sorting
-const res = companies.sort((c1, c2) => (c1.start > c2.start ? 1 : -1));
-console.log(res);
+// const res = companies.sort((c1, c2) => (c1.start > c2.start ? 1 : -1));
+// console.log(res);
+
+// sorting 2nd example
+// const sort = ages.sort((a, b) => b - a);
+// console.log(sort);
